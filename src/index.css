@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .carousel__container {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 15%,
+      rgba(255, 255, 255, 0) 85%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  .or {
+    position: relative;
+  }
+
+  .or::before,
+  .or::after {
+    content: "";
+    opacity: 0.3;
+    width: 45%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+  }
+
+  .or::before {
+    left: 0;
+  }
+
+  .or::after {
+    right: 0;
+  }
+
+  #navbar a {
+    @apply transition-all duration-200 ease-linear hover:text-secondary;
+  }
+
+  #navbar a.active {
+    @apply text-secondary transition-all duration-200 ease-linear;
+  }
+
+  .expandDetails {
+    margin-top: 1rem;
+    text-align: justify;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
+    word-break: break-word;
+  }
+
+  .premiumCard {
+    --primary: 29, 43, 83;
+    --secondary: 107, 192, 73;
+
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-image: linear-gradient(
+      125deg,
+      rgb(var(--primary), 0.6),
+      rgb(var(--secondary), 0.3)
+    );
+  }
+}
+
+/* Optional: Adjust the height of the editor */
+.ql-container {
+  height: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* customQuill.css */
+  .ql-toolbar {
+    font-size: 5px !important; /* Reduce the size of the toolbar text/icons */
+  }
+
+  .ql-toolbar button {
+    padding: 6px !important; /* Reduce button padding to make the icons smaller */
+  }
+
+  .ql-toolbar .ql-formats {
+    margin-right: 0px !important; /* Reduce the spacing between icon groups */
+  }
+
+  .ql-toolbar .ql-picker {
+    font-size: 12px !important; /* Reduce font size for dropdowns */
+  }
+
+  /* Optional: Adjust the editor to fill the available height */
+  .ql-editor {
+    height: 100% !important;
+  }
+}
