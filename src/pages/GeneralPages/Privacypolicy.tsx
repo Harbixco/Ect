@@ -1,7 +1,6 @@
 import BlueBanner from "../../components/GeneralComponents/Bluebanner";
-import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
-import PrivacyContent from "../../Ultilities/PrivacyContent.md";
+import { privacyPolicyData } from "../../DummyData/GenDummy";
+
 const Privacypolicy = () => {
   return (
     <div>
@@ -16,9 +15,17 @@ const Privacypolicy = () => {
         </div>
       </BlueBanner>
       <div className="mx-auto my-3 w-[95%]">
-        <ReactMarkdown rehypePlugins={[rehypeRaw]}>
-          {PrivacyContent}
-        </ReactMarkdown>
+        <div>
+          <h1>{privacyPolicyData.title}</h1>
+          <p>Effective Date: {privacyPolicyData.effectiveDate}</p>
+          <p>{privacyPolicyData.introduction}</p>
+          {privacyPolicyData.sections.map((section, index) => (
+            <div
+              key={index}
+              dangerouslySetInnerHTML={{ __html: section.content }}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

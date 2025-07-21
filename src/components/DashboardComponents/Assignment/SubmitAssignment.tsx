@@ -13,7 +13,7 @@ export default function SubmitAssignment() {
       <div className="mb-4 flex items-center space-x-4">
         <div className="text-xl font-semibold">
           <CircularProgressbar
-            value={submitassignment.percentage}
+            value={Number(submitassignment.percentage)}
             text={`${submitassignment.percentage}%`}
             styles={buildStyles({
               rotation: 1,

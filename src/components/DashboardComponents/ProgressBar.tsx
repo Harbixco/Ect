@@ -1,4 +1,6 @@
-const ProgressBar = ({ value }) => {
+type ProgressBarProps = { value: number };
+
+const ProgressBar = ({ value }: ProgressBarProps) => {
   return (
     <div className="relative h-2 w-full rounded-full bg-white md:h-2.5">
       <div

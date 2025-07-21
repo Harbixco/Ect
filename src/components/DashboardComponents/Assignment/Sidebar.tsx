@@ -2,7 +2,12 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-export default function Idex({ activeTab, setActiveTab }) {
+type SidebarProps = {
+  activeTab: string;
+  setActiveTab: (tab: string) => void;
+};
+
+export default function Idex({ activeTab, setActiveTab }: SidebarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {

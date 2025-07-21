@@ -15,7 +15,7 @@ export default function Viewassignment() {
               >
                 <div className="text-xl font-semibold">
                   <CircularProgressbar
-                    value={data.percentage}
+                    value={Number(data.percentage)}
                     text={`${data.percentage}%`}
                     styles={buildStyles({
                       rotation: 1,

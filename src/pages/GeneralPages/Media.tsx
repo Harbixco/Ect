@@ -1,5 +1,5 @@
 import BlueBanner from "../../components/GeneralComponents/Bluebanner";
-// import MediaCard from "../../components/GeneralComponents/MediaCard";
+import MediaCard from "../../components/GeneralComponents/MediaCard";
 
 const Media = () => {
   return (
