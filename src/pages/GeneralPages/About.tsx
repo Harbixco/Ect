@@ -1,5 +1,3 @@
-/* eslint-disable tailwindcss/no-custom-classname */
-/* eslint-disable tailwindcss/no-unnecessary-arbitrary-value */
 import BlueBanner from "../../components/GeneralComponents/Bluebanner";
 import { aboutimg } from "../../assets";
 import {
@@ -41,7 +39,7 @@ const About = () => {
               <span>YEARS’ EXPERIENCE IN IT</span>
             </div>
 
-            <p className="text-md mt-6">
+            <p className="mt-6">
               Our team of specialists is dedicated to developing outstanding
               digital experiences, <br /> offering practical solutions, and
               breaking new ground in cutting-edge technology
@@ -90,7 +88,10 @@ const About = () => {
       {/* bluebanner */}
       <div className="mt-10">
         <BlueBanner>
-          <div className="mx-auto flex items-center justify-between text-center text-white md:w-[75%]">
+          <div
+            className="{aboutcount.map((data) => ( mx-auto flex items-center             justify-between text-center text-white
+"
+          >
             {aboutcount.map((data) => (
               <div key={data.id}>
                 <h1 className="text-2xl md:text-3xl">
@@ -112,6 +113,7 @@ const About = () => {
           <TestimonialSlider
             data={aboutslider}
             Component={CommentCard}
+            slidesToShow={1} // or another appropriate number
             dots={"false"}
           />
         </div>
@@ -119,6 +121,7 @@ const About = () => {
           <TestimonialSlider
             data={aboutslider}
             Component={CommentCard}
+            slidesToShow={1} // or another appropriate number
             dots={"false"}
           />
         </div>

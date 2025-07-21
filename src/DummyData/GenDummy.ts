@@ -31,8 +31,6 @@ import {
   media5,
   media6,
   media10,
-  media11,
-  media12,
   media13,
   media14,
   media15,
@@ -790,28 +788,36 @@ export const BlogData = [
     time: "Admin 16-04-2024 16:00PM",
     description:
       "Explore the top 5 JavaScript frameworks of 2024, including React, Vue.js, Angular, Svelte, and Next.js. Each framework offers unique features and benefits for building modern web applications. Mastering one or more of these frameworks will enhance your web development skills and career prospects this year.",
-  },
+   comment: 0,
+    like: 0 
+    },
   {
     id: 2,
     title: "Top 5 JavaScript Frameworks You Should Learn in 2024",
     time: "Admin 16-04-2024 16:00PM",
     description:
       "Explore the top 5 JavaScript frameworks of 2024, including React, Vue.js, Angular, Svelte, and Next.js. Each framework offers unique features and benefits for building modern web applications. Mastering one or more of these frameworks will enhance your web development skills and career prospects this year.",
-  },
+   comment: 0,
+    like: 0 
+    },
   {
     id: 3,
     title: "Top 5 JavaScript Frameworks You Should Learn in 2024",
     time: "Admin 16-04-2024 16:00PM",
     description:
       "Explore the top 5 JavaScript frameworks of 2024, including React, Vue.js, Angular, Svelte, and Next.js. Each framework offers unique features and benefits for building modern web applications. Mastering one or more of these frameworks will enhance your web development skills and career prospects this year.",
-  },
+   comment: 0,
+    like: 0 
+    },
   {
     id: 4,
     title: "Top 2 Python Frameworks You Should Learn in 2024",
     time: "Admin 16-04-2024 15:00PM",
     description:
       "Explore the top 5 JavaScript frameworks of 2024, including React, Vue.js, Angular, Svelte, and Next.js. Each framework offers unique features and benefits for building modern web applications. Mastering one or more of these frameworks will enhance your web development skills and career prospects this year.",
-  },
+   comment: 0,
+    like: 0 
+    },
 ];
 
 export const imgbanner = [
