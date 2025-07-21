@@ -5,19 +5,18 @@ import { similarjoboffer } from "../../DummyData/GenDummy";
 
 const BlogDetails = () => {
   return (
-    <div className="w-full pt-[20px] pb-6">
+    <div className="w-full pb-6 pt-[20px]">
       <div className="mx-auto w-[93%]">
         <div className=" w-fit items-center  rounded-2xl bg-[#6BC04A] px-3 py-1">
-          <h4 className="px-2 text-sm  rounded-2xl md:text-base">
+          <h4 className="rounded-2xl px-2  text-sm md:text-base">
             web development
           </h4>
-          
         </div>
-        <div className="w-full my-5">
+        <div className="my-5 w-full">
           <h3 className="text-xl font-semibold text-primary md:text-2xl">
             Top 5 JavaScript Frameworks You Should Learn in 2024
           </h3>
-          <p className="w-full my-3 text-sm md:w-1/2 md:text-base">
+          <p className="my-3 w-full text-sm md:w-1/2 md:text-base">
             Like to know the secrets of transforming a 2-14 team into a 3x Super
             Bowl winning Dynasty? Lorem ipsum dolor sit amet, consectetur
             adipiscing elit.
@@ -27,7 +26,7 @@ const BlogDetails = () => {
       <div className="w-full">
         <img src={blogdetail} alt="blogss" className="w-full" />
         <div className="mx-auto w-[93%]">
-          <div className="flex items-center justify-between my-3">
+          <div className="my-3 flex items-center justify-between">
             <div className="flex items-center gap-x-4 md:gap-x-9">
               <div className="">
                 <h4 className="text-sm font-semibold text-primary md:text-lg ">
@@ -63,7 +62,7 @@ const BlogDetails = () => {
             vel fringilla.
           </p>
         </div>
-        <div className="w-full my-9">
+        <div className="my-9 w-full">
           <img src={blogdetails} alt="blogsde" className="w-full" />
           <div className="mx-auto my-4 w-[93%]">
             <h3 className="text-lg font-semibold text-[#6BC04A] md:text-base">
@@ -114,9 +113,9 @@ const BlogDetails = () => {
               blandit elit sagittis. Quisque tristique consequat quam sed. Nisl
               at scelerisque amet nulla purus habitasse.
             </p>
-            <div className="flex items-center justify-between w-full my-3">
+            <div className="my-3 flex w-full items-center justify-between">
               <p className="text-[#6BC04A]">Our blog</p>
-              <button className="px-3 py-1 text-white rounded-lg bg-primary">
+              <button className="rounded-lg bg-primary px-3 py-1 text-white">
                 View all posts
               </button>
             </div>
@@ -129,7 +128,7 @@ const BlogDetails = () => {
               grow.
             </p>
             {/* Similar Jobcard here */}
-            <div className="grid grid-cols-1 mt-5 md:grid-cols-3">
+            <div className="mt-5 grid grid-cols-1 md:grid-cols-3">
               {similarjoboffer.map((data) => (
                 <div className="" key={data.id}>
                   <SimilarjobCard {...data} />

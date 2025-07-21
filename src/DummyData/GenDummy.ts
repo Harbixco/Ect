@@ -683,6 +683,7 @@ export const similarjoboffer = [
     date: "24 Apr 2024",
     moredescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.",
+    type: "Full-time",
   },
   {
     id: 2,
@@ -694,6 +695,7 @@ export const similarjoboffer = [
     date: "24 Apr 2024",
     moredescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.",
+    type: "Full-time",
   },
   {
     id: 3,
@@ -705,6 +707,7 @@ export const similarjoboffer = [
     date: "24 Apr 2024",
     moredescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.",
+    type: "Full-time",
   },
 ];
 
@@ -788,36 +791,36 @@ export const BlogData = [
     time: "Admin 16-04-2024 16:00PM",
     description:
       "Explore the top 5 JavaScript frameworks of 2024, including React, Vue.js, Angular, Svelte, and Next.js. Each framework offers unique features and benefits for building modern web applications. Mastering one or more of these frameworks will enhance your web development skills and career prospects this year.",
-   comment: 0,
-    like: 0 
-    },
+    comment: 0,
+    like: 0,
+  },
   {
     id: 2,
     title: "Top 5 JavaScript Frameworks You Should Learn in 2024",
     time: "Admin 16-04-2024 16:00PM",
     description:
       "Explore the top 5 JavaScript frameworks of 2024, including React, Vue.js, Angular, Svelte, and Next.js. Each framework offers unique features and benefits for building modern web applications. Mastering one or more of these frameworks will enhance your web development skills and career prospects this year.",
-   comment: 0,
-    like: 0 
-    },
+    comment: 0,
+    like: 0,
+  },
   {
     id: 3,
     title: "Top 5 JavaScript Frameworks You Should Learn in 2024",
     time: "Admin 16-04-2024 16:00PM",
     description:
       "Explore the top 5 JavaScript frameworks of 2024, including React, Vue.js, Angular, Svelte, and Next.js. Each framework offers unique features and benefits for building modern web applications. Mastering one or more of these frameworks will enhance your web development skills and career prospects this year.",
-   comment: 0,
-    like: 0 
-    },
+    comment: 0,
+    like: 0,
+  },
   {
     id: 4,
     title: "Top 2 Python Frameworks You Should Learn in 2024",
     time: "Admin 16-04-2024 15:00PM",
     description:
       "Explore the top 5 JavaScript frameworks of 2024, including React, Vue.js, Angular, Svelte, and Next.js. Each framework offers unique features and benefits for building modern web applications. Mastering one or more of these frameworks will enhance your web development skills and career prospects this year.",
-   comment: 0,
-    like: 0 
-    },
+    comment: 0,
+    like: 0,
+  },
 ];
 
 export const imgbanner = [
@@ -832,3 +835,37 @@ export const imgbanner = [
     text: "",
   },
 ];
+
+
+export const privacyPolicyData = {
+  title: "Privacy Policy",
+  effectiveDate: "2024",
+  introduction:
+    "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.",
+  sections: [
+    {
+      heading: "Interpretation and Definitions",
+      type: "html", // Indicates this section's content is raw HTML
+      content: `
+        <h1 style="color:blue; font-size:22px;">Interpretation and Definitions</h1>
+        <br/>
+        <h2>Definitions</h2>
+        <br/>
+        <p>For the purposes of this Privacy Policy:</p>
+        <p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
+        <p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where “control” means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
+        <p><strong>Company</strong> (referred to as either “the Company”, “We”, “Us” or “Our” in this Agreement) refers to EXPANSION CYBER TECHNOLOGIES, F3B THIRD FLOOR IYB PLAZA OPPOSITE KABELO FILLING STATION OTA EFUN OSOGBO.</p>
+        <p><strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your Browse history on that website among its many uses.</p>
+        <p><strong>Country</strong> refers to Nigeria</p>
+        <p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
+        <p><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</p>
+        <p><strong>Service</strong> refers to the Website.</p>
+        <p><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>
+        <p><strong>Third-party Social Media Service</strong> refers to any website or any social network website through which a User can log in or create an account to use the Service.</p>
+        <p><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</p>
+        <p><strong>Website</strong> refers to Expansion Cyber Technologies , accessible from expansioncybertech.com</p>
+        <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
+      `,
+    },
+  ],
+};
