@@ -1,6 +1,6 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable tailwindcss/no-unnecessary-arbitrary-value */
-import { Texteditor } from "../../components";
+import { Texteditor } from "..";
 
 export default function AddJob() {
   return (

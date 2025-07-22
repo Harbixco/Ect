@@ -2,7 +2,7 @@ import { X } from "lucide-react";
 import { useModal } from "../../../hooks/UseModal";
 import LoginForm from "../authentication/Login";
 import SignupForm from "../authentication/Signup";
-import { PaymentSuccess } from "../../../pages";
+// import { PaymentSuccess } from "../../../pages";
 
 export default function AuthenticationModal() {
   const { isModalOpen, modalType, closeModal } = useModal();
@@ -21,9 +21,9 @@ export default function AuthenticationModal() {
         <div className="mx-auto max-w-md pt-4">
           {modalType === "login" && <LoginForm />}
           {modalType === "signup" && <SignupForm />}
-          {modalType === "paymentsuccess" && (
+          {/* {modalType === "paymentsuccess" && (
             <PaymentSuccess closeModal={closeModal} />
-          )}
+          )} */}
         </div>
       </div>
     </section>

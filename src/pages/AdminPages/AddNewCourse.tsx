@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { thumb } from "../../assets";
-import { TextEditor } from "../../components";
+// import { TextEditor } from "../../components";
 import { Plus } from "lucide-react";
 
 const AddNewCourse = () => {
@@ -129,9 +129,7 @@ const AddNewCourse = () => {
                 <label className="text-lg font-bold md:text-xl">
                   Description
                 </label>
-                <div className="mt-1  w-full ">
-                  <TextEditor />
-                </div>
+                <div className="mt-1  w-full ">{/* <TextEditor /> */}</div>
               </div>
               <div className="w-full md:w-1/4">
                 <h4 className="">Upload thumbnail</h4>
@@ -140,15 +138,11 @@ const AddNewCourse = () => {
             </div>
             <div className=" my-4">
               <p className="">What you will learn</p>
-              <div className="mt-1 w-full">
-                <TextEditor />
-              </div>
+              <div className="mt-1 w-full">{/* <TextEditor /> */}</div>
             </div>
             <div className=" my-6">
               <p className="">Requirement</p>
-              <div className="mt-1 w-full">
-                <TextEditor />
-              </div>
+              <div className="mt-1 w-full">{/* <TextEditor /> */}</div>
             </div>
           </form>
         </div>
