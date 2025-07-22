@@ -19,14 +19,14 @@ const AddNewCourse = () => {
         <div className="mx-auto w-full md:w-[97%]">
           <form>
             <div className="mt-4 flex w-full flex-col items-start gap-4 md:flex-row md:items-center">
-              <div className="w-full md:w-[75%]">
+              <div className="w-full md:w-3/4">
                 <label className="mb-1 block">Title</label>
                 <input
                   type="text"
                   className="w-full border border-[#dadada] p-2"
                 />
               </div>
-              <div className="w-full md:w-[25%]">
+              <div className="w-full md:w-1/4">
                 <label className="mb-1 block">Course Category</label>
                 <select className="w-full border border-[#dadada] p-2">
                   <option>Ui/Ux</option>
@@ -37,27 +37,27 @@ const AddNewCourse = () => {
               </div>
             </div>
             <div className="mt-6 flex w-full flex-col items-start gap-4 md:flex-row md:items-center">
-              <div className="w-full md:w-[75%]">
+              <div className="w-full md:w-3/4">
                 <label className="mb-1 block">Created by</label>
                 <input
                   type="text"
                   className="w-full border border-[#dadada] p-2"
                 />
               </div>
-              <div className="w-full md:w-[25%]">
+              <div className="w-full md:w-1/4">
                 <label className="mb-1 block">Price</label>
                 <input className="w-full border border-[#dadada] p-2" />
               </div>
             </div>
             <div className="mt-6 flex w-full flex-col items-start gap-4 md:flex-row md:items-center">
-              <div className="w-full md:w-[75%]">
+              <div className="w-full md:w-3/4">
                 <label className="mb-1 block">Estimated completion date</label>
                 <input
                   type="text"
                   className="w-full border border-[#dadada] p-2"
                 />
               </div>
-              <div className="w-full md:w-[25%]">
+              <div className="w-full md:w-1/4">
                 <label className="mb-1 block">Language</label>
                 <select className="w-full border border-[#dadada] p-2">
                   <option>English</option>
@@ -72,14 +72,14 @@ const AddNewCourse = () => {
                   <div className="flex items-center gap-x-2">
                     <input
                       type="checkbox"
-                      className=" size-4 cursor-pointer appearance-none rounded-sm border border-[#6BC049] checked:border-transparent checked:bg-[#6BC049] focus:outline-none md:size-6"
+                      className=" size-4 cursor-pointer appearance-none rounded-sm border border-secondary checked:border-transparent checked:bg-secondary focus:outline-none md:size-6"
                     />
                     <label>Yes</label>
                   </div>
                   <div className="flex items-center gap-x-2">
                     <input
                       type="checkbox"
-                      className="size-4 size-4 cursor-pointer appearance-none rounded-sm border border-[#6BC049] checked:border-transparent checked:bg-[#6BC049] focus:outline-none md:size-6 md:size-6"
+                      className="size-4 cursor-pointer appearance-none rounded-sm border border-secondary checked:border-transparent checked:bg-secondary focus:outline-none md:size-6"
                     />
                     <label>No</label>
                   </div>
@@ -91,14 +91,14 @@ const AddNewCourse = () => {
                   <div className="flex items-center gap-x-2">
                     <input
                       type="checkbox"
-                      className="size-4 size-4 cursor-pointer appearance-none rounded-sm border border-[#6BC049] checked:border-transparent checked:bg-[#6BC049] focus:outline-none md:size-6 md:size-6"
+                      className="size-4 cursor-pointer appearance-none rounded-sm border border-secondary checked:border-transparent checked:bg-secondary focus:outline-none md:size-6"
                     />
                     <label>Yes</label>
                   </div>
                   <div className="flex items-center gap-x-2">
                     <input
                       type="checkbox"
-                      className="size-4 size-4 cursor-pointer appearance-none rounded-sm border border-[#6BC049] checked:border-transparent checked:bg-[#6BC049] focus:outline-none md:size-6 md:size-6"
+                      className="size-4 cursor-pointer appearance-none rounded-sm border border-secondary checked:border-transparent checked:bg-secondary focus:outline-none md:size-6"
                     />
                     <label>No</label>
                   </div>
@@ -110,14 +110,14 @@ const AddNewCourse = () => {
                   <div className="flex items-center gap-x-2">
                     <input
                       type="checkbox"
-                      className="size-4 size-4 cursor-pointer appearance-none rounded-sm border border-[#6BC049] checked:border-transparent checked:bg-[#6BC049] focus:outline-none md:size-6 md:size-6"
+                      className="size-4 cursor-pointer appearance-none rounded-sm border border-secondary checked:border-transparent checked:bg-secondary focus:outline-none md:size-6"
                     />
                     <label>Yes</label>
                   </div>
                   <div className="flex items-center gap-x-2">
                     <input
                       type="checkbox"
-                      className="size-4 size-4 cursor-pointer appearance-none rounded-sm border border-[#6BC049] checked:border-transparent checked:bg-[#6BC049] focus:outline-none md:size-6 md:size-6"
+                      className="size-4 cursor-pointer appearance-none rounded-sm border border-secondary checked:border-transparent checked:bg-secondary focus:outline-none md:size-6"
                     />
                     <label>No</label>
                   </div>
@@ -153,8 +153,8 @@ const AddNewCourse = () => {
           </form>
         </div>
       </div>
-
-      <div className=" w-[80% ] mx-auto mb-8 mt-10 flex flex-col items-center justify-between gap-6 md:w-[60%] md:flex-row lg:w-[50%]">
+      // eslint-disable-next-line tailwindcss/no-custom-classname
+      <div className=" mx-auto mb-8 mt-10 flex w-3/4 flex-col items-center justify-between gap-6 md:w-3/5 md:flex-row lg:w-1/2">
         <button className="w-full rounded-3xl bg-adminPrimary py-1 text-sm  text-white md:text-base">
           Save Changes
         </button>

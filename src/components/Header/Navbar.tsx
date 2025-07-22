@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Logo, Menu } from "../common";
+import { Logo } from "../common";
 import { Search, ChevronDown } from "lucide-react"; // Import ChevronDown
 import { ReactNode, useState } from "react";
 
@@ -27,7 +27,7 @@ export default function NavBar({ Buttons, NavList }: NavbarProps) {
   return (
     <nav className="sticky top-0 z-40 flex items-center justify-between gap-20 border-b bg-white p-4 md:px-8 md:py-4">
       <div className="flex items-center gap-4">
-        <Menu onClick={handleMobileMenuToggle} />
+        {/* <Menu onClick={handleMobileMenuToggle} /> */}
         <Logo className="w-28 md:w-40 lg:w-44" />
       </div>
 
@@ -64,7 +64,7 @@ export default function NavBar({ Buttons, NavList }: NavbarProps) {
                   {nav}
                   {dropdown && (
                     <ChevronDown
-                      className={`ml-2 h-4 w-4 transition-transform ${dropdownOpen === index ? "rotate-180" : "rotate-0"}`}
+                      className={`ml-2 size-4 transition-transform ${dropdownOpen === index ? "rotate-180" : "rotate-0"}`}
                     />
                   )}
                 </NavLink>
@@ -79,7 +79,7 @@ export default function NavBar({ Buttons, NavList }: NavbarProps) {
                       <NavLink
                         key={dropdownIndex}
                         to={dropdownLink}
-                        className="block px-2 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block p-2 text-gray-700 hover:bg-gray-100"
                       >
                         {dropdownNav}
                       </NavLink>
@@ -99,7 +99,7 @@ export default function NavBar({ Buttons, NavList }: NavbarProps) {
           <div className="p-4">
             <div className="flex justify-end">
               <button onClick={handleMobileMenuToggle}>
-                <ChevronDown className="h-6 w-6" />
+                <ChevronDown className="size-6" />
               </button>
             </div>
             <div className="mt-4 space-y-2">

@@ -1,3 +1,4 @@
+import React from "react";
 import BlueBanner from "../../components/GeneralComponents/Bluebanner";
 import { aboutimg } from "../../assets";
 import {
@@ -8,16 +9,8 @@ import {
 } from "../../DummyData/GenDummy";
 import { Check } from "lucide-react";
 import { TeamCard, CustomSlider, Countup } from "../../components";
-import { FC } from "react";
 import CommentCard from "../../components/GeneralComponents/CommentCard";
 import TestimonialSlider from "../../components/GeneralComponents/TestimonialSlider";
-
-type TeamCardProps = {
-  id: string | number;
-  avatar: string;
-  name: string;
-  position: string;
-};
 
 const About = () => {
   return (
@@ -33,7 +26,6 @@ const About = () => {
         </div>
       </BlueBanner>
 
-      {/* About us hero */}
       <div className="mx-auto w-full md:flex ">
         <div className="mx-auto w-[90%] items-center justify-between gap-[100px] md:flex">
           <div className=" ">
@@ -56,7 +48,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Our goal */}
       <div className="mt-10 w-full bg-[#E8EAEE80] py-10 md:mt-20">
         <h1 className="mb-2  items-center   text-center  text-lg font-bold md:text-2xl">
           We create solutions for businesses
@@ -80,28 +71,25 @@ const About = () => {
         </div>
       </div>
 
-      {/* meet our team */}
       <div className="w-full">
         <div className="">
           <div className="my-5 text-center md:my-10">
             <h2 className="text-2xl font-bold uppercase">Meet Our Team</h2>
             <p className="text-sm">We are the best team</p>
-          <div className="bg-[#F0F9ED]">
-            <CustomSlider
-              data={meettheteam}
-              Component={TeamCard as FC<TeamCardProps>}
-            />
-          </div>
+            <div className="bg-[#F0F9ED]">
+              <CustomSlider
+                data={meettheteam}
+                Component={TeamCard}
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* bluebanner */}
       <div className="mt-10">
         <BlueBanner>
           <div
-            className="{aboutcount.map((data) => ( mx-auto flex items-center             justify-between text-center text-white
-"
+            className="mx-auto flex items-center justify-between text-center text-white"
           >
             {aboutcount.map((data) => (
               <div key={data.id}>
@@ -115,7 +103,6 @@ const About = () => {
         </BlueBanner>
       </div>
 
-      {/* testimonials */}
       <div className="mt-4 items-center ">
         <h2 className=" my-10  flex justify-center text-2xl font-bold uppercase">
           testimonials
@@ -124,16 +111,16 @@ const About = () => {
           <TestimonialSlider
             data={aboutslider}
             Component={CommentCard}
-            slidesToShow={1} // or another appropriate number
-            dots={"false"}
+            slidesToShow={1}
+            dots={false}
           />
         </div>
         <div className="mb-10">
           <TestimonialSlider
             data={aboutslider}
             Component={CommentCard}
-            slidesToShow={1} // or another appropriate number
-            dots={"false"}
+            slidesToShow={1}
+            dots={false}
           />
         </div>
       </div>
