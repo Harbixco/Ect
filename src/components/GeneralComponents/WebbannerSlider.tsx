@@ -1,7 +1,14 @@
 
 import Slider from "react-slick";
 
-const WebbannerSlider = ({ data, Component, slidesToShow = 1, dots = "true" }) => {
+type WebbannerSliderProps<T extends { id: React.Key }> = {
+  data: T[];
+  Component: React.ComponentType<T>;
+  slidesToShow?: number;
+  dots?: boolean;
+};
+
+const WebbannerSlider = <T extends { id: React.Key }>({ data, Component, slidesToShow = 1, dots = true }: WebbannerSliderProps<T>) => {
   const settings = {
     dots,
     infinite: true,

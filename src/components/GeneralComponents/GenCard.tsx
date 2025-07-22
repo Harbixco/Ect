@@ -1,15 +1,15 @@
 import { Button } from "../common";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 const GenCard: React.FC<{
   avater: string;
   title: string;
   icon: string[];
   description: string;
 }> = ({ avater, title, icon, description }) => {
-  const navigate = useNavigate();
-  const clickHandler = () => {
-    navigate("getaquote");
-  };
+  // const navigate = useNavigate();
+  // const clickHandler = () => {
+  //   navigate("getaquote");
+  // };
 
   return (
     <div className="mx-auto shadow-lg  md:w-[350px]">
