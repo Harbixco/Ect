@@ -8,8 +8,16 @@ import {
 } from "../../DummyData/GenDummy";
 import { Check } from "lucide-react";
 import { TeamCard, CustomSlider, Countup } from "../../components";
+import { FC } from "react";
 import CommentCard from "../../components/GeneralComponents/CommentCard";
 import TestimonialSlider from "../../components/GeneralComponents/TestimonialSlider";
+
+type TeamCardProps = {
+  id: string | number;
+  avatar: string;
+  name: string;
+  position: string;
+};
 
 const About = () => {
   return (
@@ -78,9 +86,12 @@ const About = () => {
           <div className="my-5 text-center md:my-10">
             <h2 className="text-2xl font-bold uppercase">Meet Our Team</h2>
             <p className="text-sm">We are the best team</p>
-          </div>
           <div className="bg-[#F0F9ED]">
-            <CustomSlider data={meettheteam} Component={TeamCard} />
+            <CustomSlider
+              data={meettheteam}
+              Component={TeamCard as FC<TeamCardProps>}
+            />
+          </div>
           </div>
         </div>
       </div>

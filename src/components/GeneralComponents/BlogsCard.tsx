@@ -2,7 +2,16 @@ import { Link } from "react-router-dom";
 import { blogs } from "../../assets";
 import { Heart, MessageSquareText } from "lucide-react";
 
-const BlogsCard = ({ id, title, time, description, comment, like }) => {
+type BlogsCardProps = {
+  id: number | string;
+  title: string;
+  time: string;
+  description: string;
+  comment: number | string;
+  like: number | string;
+};
+
+const BlogsCard = ({ id, title, time, description, comment, like }: BlogsCardProps) => {
   return (
     <div className="w-full border border-[#dadada] py-3">
       <div className="mx-auto flex w-[95%] flex-col items-start gap-x-4 md:flex-row">

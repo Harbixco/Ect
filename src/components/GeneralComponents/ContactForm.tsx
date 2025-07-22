@@ -3,7 +3,7 @@ import { Button } from "../common";
 const ContactForm = () => {
   return (
     <div className="w-full">
-      <div className="m-auto items-center  py-5  text-white md:w-[50%]  ">
+      <div className="m-auto items-center  py-5  text-white md:w-1/2">
         <div className="my-5 items-center ">
           <form
             action=""
@@ -40,7 +40,14 @@ const ContactForm = () => {
               ></textarea>
             </div>
             <div className="flex justify-center">
-              <Button category="primary" text="Send Message"></Button>
+              <Button
+                category="primary"
+                text="Send Message"
+                type="function"
+                onClick={() => {
+                  /* handle click */
+                }}
+              ></Button>
             </div>
           </form>
         </div>

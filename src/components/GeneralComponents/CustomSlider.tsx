@@ -1,6 +1,18 @@
 import Slider from "react-slick";
 
-const CustomSlider = ({ data, Component, slidesToShow = 3, dots = "true" }) => {
+type CustomSliderProps<T extends { id: string | number }> = {
+  data: T[];
+  Component: React.ComponentType<T>;
+  slidesToShow?: number;
+  dots?: boolean;
+};
+
+const CustomSlider = <T extends { id: string | number }>({
+  data,
+  Component,
+  slidesToShow = 3,
+  dots = true,
+}: CustomSliderProps<T>) => {
   const settings = {
     dots,
     infinite: true,

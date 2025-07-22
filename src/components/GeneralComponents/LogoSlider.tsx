@@ -1,6 +1,18 @@
 import Slider from "react-slick";
 
-const LogoSlider = ({ data, Component, slidesToShow, dots = "true" }) => {
+type LogoSliderProps<T> = {
+  data: T[];
+  Component: React.ComponentType<T>;
+  slidesToShow: number;
+  dots?: boolean;
+};
+
+const LogoSlider = <T extends { id: string | number }>({
+  data,
+  Component,
+  slidesToShow,
+  dots = true,
+}: LogoSliderProps<T>) => {
   const testsettings = {
     dots,
     infinite: true,
