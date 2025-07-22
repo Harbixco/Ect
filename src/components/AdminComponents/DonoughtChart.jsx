@@ -3,43 +3,12 @@ import {
   ArcElement,
   Tooltip,
   Legend,
-  ChartOptions,
 } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-interface CustomChartOptions extends ChartOptions {
-  plugins: {
-    tooltip: {
-      titleFont: {
-        size: number;
-      };
-      bodyFont: {
-        size: number;
-      };
-    };
-    legend: {
-      display: boolean;
-      responsive: boolean;
-      position: "top" | "left" | "bottom" | "right";
-      labels: {
-        boxWidth: number;
-        boxHeight: number;
-        padding: number;
-        font: {
-          size: number;
-        };
-      };
-    };
-  };
-}
-
-interface DonoughtChartProps {
-  position: "top" | "left" | "bottom" | "right";
-}
-
-const DonoughtChart = ({ position }: DonoughtChartProps) => {
+const DonoughtChart = ({ position }) => {
   // Dummy data
   const Chartdata = [
     { package: "Basic", percentage: 40 },
@@ -47,7 +16,7 @@ const DonoughtChart = ({ position }: DonoughtChartProps) => {
     { package: "Premium", percentage: 30 },
   ];
 
-  const options: CustomChartOptions = {
+  const options = {
     plugins: {
       tooltip: {
         titleFont: {

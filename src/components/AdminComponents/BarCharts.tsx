@@ -1,4 +1,3 @@
-import React from "react";
 import { BarChart, Bar, ResponsiveContainer, XAxis, YAxis } from "recharts";
 
 const data = [
