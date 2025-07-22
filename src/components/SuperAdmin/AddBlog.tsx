@@ -1,6 +1,6 @@
 /* eslint-disable tailwindcss/no-unnecessary-arbitrary-value */
 import { Image } from "lucide-react";
-import { Texteditor } from "../../components";
+import { Texteditor } from "..";
 export default function AddBlog() {
   return (
     <>

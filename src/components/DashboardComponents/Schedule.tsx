@@ -1,5 +1,5 @@
 /* eslint-disable tailwindcss/no-unnecessary-arbitrary-value */
-import { CalendarCompo } from "../../components";
+import { CalendarCompo } from "..";
 import { Plus, Minus, Slash } from "lucide-react";
 import { schedule } from "../../DummyData/DashboardDummy";
 
